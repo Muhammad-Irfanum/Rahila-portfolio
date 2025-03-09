@@ -1,12 +1,12 @@
-import React from 'react';
+import React from "react";
 import {
   FaLinkedin,
   FaGithub,
   FaFacebook,
   FaInstagram,
   FaTwitter,
-} from 'react-icons/fa';
-import { useInView } from 'react-intersection-observer';
+} from "react-icons/fa";
+import { useInView } from "react-intersection-observer";
 
 const Socials = () => {
   const { ref, inView } = useInView({
@@ -17,62 +17,62 @@ const Socials = () => {
   const socialLinks = [
     {
       icon: FaLinkedin,
-      url: 'https://www.linkedin.com',
-      color: '#0077b5',
-      label: 'LinkedIn',
+      url: "https://www.linkedin.com",
+      color: "#0077b5",
+      label: "LinkedIn",
     },
     {
       icon: FaGithub,
-      url: 'https://github.com',
-      color: '#333',
-      label: 'GitHub',
+      url: "https://github.com/rahilamuqaddam",
+      color: "#333",
+      label: "GitHub",
     },
     {
       icon: FaFacebook,
-      url: 'https://www.facebook.com',
-      color: '#4267B2',
-      label: 'Facebook',
+      url: "https://www.facebook.com",
+      color: "#4267B2",
+      label: "Facebook",
     },
     {
       icon: FaTwitter,
-      url: 'https://twitter.com',
-      color: '#1DA1F2',
-      label: 'Twitter',
+      url: "https://twitter.com",
+      color: "#1DA1F2",
+      label: "Twitter",
     },
     {
       icon: FaInstagram,
-      url: 'https://www.instagram.com',
-      color: '#E1306C',
-      label: 'Instagram',
+      url: "https://www.instagram.com",
+      color: "#E1306C",
+      label: "Instagram",
     },
   ];
 
   return (
-    <div className='text-white pt-20'>
-      <div className='container mx-auto px-2 text-center'>
+    <div className="text-white pt-20">
+      <div className="container mx-auto px-2 text-center">
         <div ref={ref}>
-          <h2 className='text-4xl font-bold mb-6'>
+          <h2 className="text-4xl font-bold mb-6">
             Connect with Me
             <div
               className={`h-1 bg-white transition-all duration-700 ${
-                inView ? 'w-[10em]' : 'w-0'
+                inView ? "w-[10em]" : "w-0"
               } mx-auto mt-2`}
-              style={{ transitionDelay: '300ms' }}
+              style={{ transitionDelay: "300ms" }}
             />
           </h2>
         </div>
-        <div className='flex flex-wrap justify-center items-center gap-16 mt-16'>
+        <div className="flex flex-wrap justify-center items-center gap-16 mt-16">
           {socialLinks.map((social, index) => (
             <a
               key={index}
               href={social.url}
-              target='_blank'
-              rel='noopener noreferrer'
-              className='flex flex-col items-center transition-transform duration-300 ease-in-out hover:scale-110  '
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex flex-col items-center transition-transform duration-300 ease-in-out hover:scale-110  "
               aria-label={social.label}
             >
               <social.icon
-                className='text-6xl '
+                className="text-6xl "
                 style={{ color: social.color }}
               />
             </a>

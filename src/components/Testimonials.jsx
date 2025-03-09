@@ -4,8 +4,8 @@ import { useInView } from 'react-intersection-observer';
 const testimonialsData = [
   {
     id: 1,
-    name: 'Mukhtiar Zamin',
-    handle: '@mukhtiarzamin',
+    name: 'Nilo Far',
+    handle: '@nilofar',
     avatar: 'https://source.unsplash.com/random/128x128?sig=2',
     testimonial:
       'You made it so simple. My new site is so much faster and easier to work with than my old site. I just choose the page, make the change and click save.',
