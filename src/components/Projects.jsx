@@ -6,16 +6,16 @@ const projects = [
   {
     title: 'EnglishQuest - A Mob App Game',
     description:
-      'A Social Media App made with React Native & Firebase. It has features like posting, commenting, liking, following, etc.',
+      'A EnglishQuest made with C#, Learners study English using fun and interactive method.',
     image: '/game.png',
     githubLink: 'https://github.com/',
     // liveLink: 'https://project-one-live-link.com',
     tech: [
-      'React Native',
-      'ContextAPI',
-      'Firebase',
-      'React Navigation',
-      'Expo',
+      'C#',
+      'Weight Based Algorithm',
+      'Unity',
+      'APK File',
+      '',
     ],
   },
   {
@@ -32,7 +32,7 @@ const projects = [
     image: '/campushop.png',
     githubLink: 'https://github.com',
 
-    tech: ['React Native', 'Firebase', 'React Navigation', 'Expo'],
+    tech: ['React Native', 'Firebase', 'Expo', 'Redux'],
   },
 ];
 
